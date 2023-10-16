@@ -31,7 +31,7 @@
         <th> Product </th>
         <th>Status </th>
     </tr>
-    {% for order in orders %}
+    {% for order in ord %}
     <tr>
         <td> <a href="{% url 'update_order' order.id %}"><button type="button" class="btn btn-success">Update Order</button></a> </td>
         <td> <a href="{% url 'delete_order' order.id %}"><button type="button" class="btn btn-success">Delete Order</button></a> </td>
